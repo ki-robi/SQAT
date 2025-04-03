@@ -1,9 +1,9 @@
-﻿using AventStack.ExtentReports;
+using AventStack.ExtentReports;
 using AventStack.ExtentReports.Reporter;
 using CsvHelper;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using System.Formats.Asn1;
+using System;
 using System.Globalization;
 using System.IO;
 
@@ -13,7 +13,10 @@ class Program
     {
         IWebDriver driver = new ChromeDriver();
         ExtentReports extent = new ExtentReports();
-        ExtentSparkReporter htmlreporter = new ExtentSparkReporter(@"D:\ReportResult\Report.html");
+
+        string dateTime = DateTime.Now.ToString("yyyyMMdd_HHmmss");
+        string reportFilePath = $@"D:\ReportResult\Report_{dateTime}.html";
+        ExtentSparkReporter htmlreporter = new ExtentSparkReporter(reportFilePath);
 
         extent.AttachReporter(htmlreporter);
         ExtentTest test = extent.CreateTest("Test Case", "Positive LogIn test");
@@ -48,6 +51,7 @@ class Program
 
     static void OpenUrl(IWebDriver driver, ExtentTest test, string url)
     {
+        test.Log(Status.Info, $"Khairul Islam Robi \nDept of CSE \nJagannath University");
         driver.Navigate().GoToUrl(url);
         Thread.Sleep(1000);
         test.Log(Status.Info, $"Open url: {url}");
