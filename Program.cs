@@ -13,7 +13,7 @@ class Program
     {
         IWebDriver driver = new ChromeDriver();
         ExtentReports extent = new ExtentReports();
-        ExtentSparkReporter htmlreporter = new ExtentSparkReporter(@"C:\Users\ThinkPad\source\repos\SQAT_Project_1\ReportResult\report.html");
+        ExtentSparkReporter htmlreporter = new ExtentSparkReporter(@"D:\ReportResult\Report.html");
 
         extent.AttachReporter(htmlreporter);
         ExtentTest test = extent.CreateTest("Test Case", "Positive LogIn test");
@@ -22,7 +22,7 @@ class Program
         {
             OpenUrl(driver, test, "https://parabank.parasoft.com/parabank/index.htm");
 
-            using (var reader = new StreamReader(@"C:\Users\ThinkPad\source\repos\SQAT_Project_1\UserData\UserData.csv"))
+            using (var reader = new StreamReader(@"D:\UserData\UserData.csv"))
             using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
             {
                 var records = csv.GetRecords<UserData>();
