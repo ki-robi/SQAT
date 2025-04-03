@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="33.0.1" />
+    <PackageReference Include="ExtentReports" Version="5.0.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.2" />
+    <PackageReference Include="Selenium.Chrome.WebDriver" Version="85.0.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.30.0" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="135.0.7049.4200" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ReportResult\" />
+    <Folder Include="UserData\" />
+  </ItemGroup>
+
+</Project>

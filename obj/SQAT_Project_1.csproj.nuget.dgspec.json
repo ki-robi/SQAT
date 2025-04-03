@@ -1,0 +1,99 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ThinkPad\\source\\repos\\SQAT_Project_1\\SQAT_Project_1.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ThinkPad\\source\\repos\\SQAT_Project_1\\SQAT_Project_1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ThinkPad\\source\\repos\\SQAT_Project_1\\SQAT_Project_1.csproj",
+        "projectName": "SQAT_Project_1",
+        "projectPath": "C:\\Users\\ThinkPad\\source\\repos\\SQAT_Project_1\\SQAT_Project_1.csproj",
+        "packagesPath": "C:\\Users\\ThinkPad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ThinkPad\\source\\repos\\SQAT_Project_1\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ThinkPad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[33.0.1, )"
+            },
+            "ExtentReports": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.21.2, )"
+            },
+            "Selenium.Chrome.WebDriver": {
+              "target": "Package",
+              "version": "[85.0.0, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.30.0, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[135.0.7049.4200, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
