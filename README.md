@@ -30,8 +30,8 @@ dotnet add package CsvHelper
 ## 🚀 Setup & Run
 ## 1️⃣ Clone the Repo
 ```sh
-git clone https://github.com/your-github-username/your-repo-name.git  
-cd your-repo-name
+git clone https://github.com/ki-robi/SQAT.git  
+cd SQAT
 ```
 ## 2️⃣ Ensure Your CSV File Exists
 ****Store UserData.csv here:****
