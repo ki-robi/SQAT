@@ -35,14 +35,14 @@ cd SQAT
 ```
 ## 2️⃣ Ensure Your CSV File Exists
 ****Store UserData.csv here:****
-C:\Users\ThinkPad\source\repos\SQAT_Project_1\UserData\UserData.csv
+D:\UserData\UserData.csv
 ## 3️⃣ Run the Tests
 ```sh
 dotnet run
 ```
 ## 4️⃣ View Test Report
 ****After execution, open:****
-C:\Users\ThinkPad\source\repos\SQAT_Project_1\ReportResult\report.html
+D:\ReportResult\report.html
 ## 👤 Author
 # Khairul Islam Robi
 📧 robi001.khairul@gmail.com
